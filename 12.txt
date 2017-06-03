@@ -1,0 +1,8 @@
+//  3)在所有链接后面加上?version=20160811
+			var reg =/(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)*\/?/g;
+			var arr = box.match(reg);
+			//console.log(arr)
+			arr.forEach(function(item){
+				var arrNew = item+'?version=20160811';
+				console.log(arrNew)
+			})
